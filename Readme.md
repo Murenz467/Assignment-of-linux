@@ -288,7 +288,7 @@ Throughout the assignment, I developed a security-focused mindset:
 
 **Repository URL:** https://github.com/eliekayitare/Introduction_to_linux.git  
 **Branch Name:** 27386_murenzi_charles_assignment2  
-**Assignment File:** Contains all commands and screenshots  
+  
 
 ---
 
