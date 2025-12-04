@@ -1,0 +1,98 @@
+================================================================
+PART 1: REPOSITORY SETUP & BRANCHING
+================================================================
+
+# 1. Clone the repository
+# (Quotes are used because the URL contains spaces)
+git clone "https://github.com/eliekayitare/Introduction to linux.git"
+
+# 2. Change directory into the repository
+cd "Introduction to linux"
+
+# 3. Create the assignment branch 
+# Format: StudentID_Name_Assignment1
+git checkout -b 27386_Murenzi_Charles_assignment1
+
+================================================================
+PART 2: PRACTICE PATHS 1 SOLUTIONS
+================================================================
+
+----------------------------------------------------------------
+Question 1: Go to Home Directory (from P3)
+----------------------------------------------------------------
+# A) Using a Relative Path
+# Logic: P3 -> Hi -> P1 -> Practice -> mcbishop (4 levels up)
+cd ../../../..
+
+# B) Using an Absolute Path 
+cd /home/murenzi
+
+----------------------------------------------------------------
+Question 2: Long Listing of 'Here' (from Command directory)
+----------------------------------------------------------------
+# A) Using a Relative Path
+# Logic: Up to Practice (..), down to P1/Hi/P3/Here
+ls -l ../P1/Hi/P3/Here
+
+# B) Using an Absolute Path
+ls -l /home/murenzi/Practice/P1/Hi/P3/Here
+
+----------------------------------------------------------------
+Question 3: Copy directory P3 to Command (Copy the FOLDER)
+----------------------------------------------------------------
+# A) Relative path (from P2)
+cp -r ../Hi/P3 ../../Command
+
+# B) Relative path (from P3)
+cp -r . ../../../Command
+
+# C) Relative path (from Command)
+cp -r ../P1/Hi/P3 .
+
+# D) Absolute path
+cp -r /home/murenzi/Practice/P1/Hi/P3 /home/murenzi/Practice/Command
+
+----------------------------------------------------------------
+Question 4: Copy contents of P3 to Command (Copy FILES only)
+----------------------------------------------------------------
+# A) Relative path (from P2)
+cp -r ../Hi/P3/* ../../Command
+
+# B) Relative path (from P3)
+cp -r * ../../../Command
+
+# C) Relative path (from Command)
+cp -r ../P1/Hi/P3/* .
+
+# D) Absolute path
+cp -r /home/murenzi/Practice/P1/Hi/P3/* /home/murenzi/Practice/Command
+
+----------------------------------------------------------------
+Question 5: Difference between Question 3 and 4
+----------------------------------------------------------------
+ANSWER:
+Question 3 copies the directory 'P3' itself, creating a subfolder named 'P3' inside 'Command'.
+Question 4 copies only the files and subfolders *inside* 'P3' directly into 'Command', without creating the parent 'P3' folder.
+
+----------------------------------------------------------------
+Question 6: Color Coding Explanation
+----------------------------------------------------------------
+ANSWER:
+- Yellow: Represents regular Files (like 'info' and 'Hello').
+- Blue: Represents Directories (Folders).
+- 'hereWeAre' Color: It should be Yellow.
+- Why?: Because it is at the bottom of the tree structure inside the directory 'Here' and has no children, implying it is a file.
+
+================================================================
+PART 3: SUBMISSION
+================================================================
+
+# 1. Add all changes to staging
+git add .
+
+# 2. Commit the changes
+git commit -m "Completed Assignment 1 questions and answers"
+
+# 3. Push to your personal branch (CRITICAL STEP)
+# Do not push to main!
+git push origin 27386_Murenzi_Charles_assignment1
