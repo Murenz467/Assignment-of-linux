@@ -10,8 +10,8 @@ git clone "https://github.com/eliekayitare/Introduction to linux.git"
 cd "Introduction to linux"
 
 # 3. Create the assignment branch 
-# Format: StudentID_Name_Assignment1
-git checkout -b 27386_Murenzi_Charles_assignment1
+# Updated to reflect the name Charles
+git checkout -b 27386_Charles_assignment1
 
 ================================================================
 PART 2: PRACTICE PATHS 1 SOLUTIONS
@@ -25,7 +25,8 @@ Question 1: Go to Home Directory (from P3)
 cd ../../../..
 
 # B) Using an Absolute Path 
-cd /home/murenzi
+# Updated home directory to 'charles'
+cd /home/charles
 
 ----------------------------------------------------------------
 Question 2: Long Listing of 'Here' (from Command directory)
@@ -35,7 +36,8 @@ Question 2: Long Listing of 'Here' (from Command directory)
 ls -l ../P1/Hi/P3/Here
 
 # B) Using an Absolute Path
-ls -l /home/murenzi/Practice/P1/Hi/P3/Here
+# Updated home directory to 'charles'
+ls -l /home/charles/Practice/P1/Hi/P3/Here
 
 ----------------------------------------------------------------
 Question 3: Copy directory P3 to Command (Copy the FOLDER)
@@ -50,7 +52,8 @@ cp -r . ../../../Command
 cp -r ../P1/Hi/P3 .
 
 # D) Absolute path
-cp -r /home/murenzi/Practice/P1/Hi/P3 /home/murenzi/Practice/Command
+# Updated home directory to 'charles'
+cp -r /home/charles/Practice/P1/Hi/P3 /home/charles/Practice/Command
 
 ----------------------------------------------------------------
 Question 4: Copy contents of P3 to Command (Copy FILES only)
@@ -65,7 +68,8 @@ cp -r * ../../../Command
 cp -r ../P1/Hi/P3/* .
 
 # D) Absolute path
-cp -r /home/murenzi/Practice/P1/Hi/P3/* /home/murenzi/Practice/Command
+# Updated home directory to 'charles'
+cp -r /home/charles/Practice/P1/Hi/P3/* /home/charles/Practice/Command
 
 ----------------------------------------------------------------
 Question 5: Difference between Question 3 and 4
@@ -95,4 +99,4 @@ git commit -m "Completed Assignment 1 questions and answers"
 
 # 3. Push to your personal branch (CRITICAL STEP)
 # Do not push to main!
-git push origin 27386_Murenzi_Charles_assignment1
+git push origin 27386_Charles_assignment1
