@@ -83,16 +83,3 @@ ANSWER:
 - 'hereWeAre' Color: It should be Yellow.
 - Why?: Because it is at the bottom of the tree structure inside the directory 'Here' and has no children, implying it is a file.
 
-================================================================
-PART 3: SUBMISSION
-================================================================
-
-# 1. Add all changes to staging
-git add .
-
-# 2. Commit the changes
-git commit -m "Completed Assignment 1 questions and answers"
-
-# 3. Push to your personal branch (CRITICAL STEP)
-# Do not push to main!
-git push origin 27386_Murenzi_Charles_assignment1
